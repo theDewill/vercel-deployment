@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import Lottie from 'lottie-react';
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import Helmet from 'react-helmet';
 
 
 //----Components----//
@@ -124,7 +125,12 @@ export default function Home() {
   let inputField = "text-orngclr box-border focus:ring-0  bg-[#0000] border-x-0 border-t-0 border-b-2 border-orngclr mb-[2px] w-full"
   return (
 
+<>
 
+<Helmet>
+      <title>Contact | Terracode</title>
+      <meta name="description" content="Provide us with your requirement" />
+    </Helmet>
     <div className={mainStyle}>
 
 
@@ -474,5 +480,7 @@ export default function Home() {
         <Footer blury={blury} />
       </footer>
     </div>
+
+    </>
   );
 }
