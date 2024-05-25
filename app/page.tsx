@@ -82,6 +82,7 @@ export default function Home() {
       <Helmet>
         <title>Terracode</title>
         <meta name="description" content="At Terracode, We specialize in bespoke AI solutions and cutting-edge software designed to optimize efficiency and surpass client expectations, ensuring streamlined processes and exceptional outcomes." />
+        <meta name="google-site-verification" content="K_kE5pf1RuSSakjv8k1s2lylJs4p3FyGrrS2wUdmvaY" />
       </Helmet>
       
       <div className=" p-0 flex flex-col gap-10 overflow-hidden" >
