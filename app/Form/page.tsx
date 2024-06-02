@@ -16,6 +16,7 @@ import doneTick from '@/public/Anim/doneTick.json'
 import sentTick from '@/public/Anim/sentAnim.json';
 import loading from '@/public/Anim/load_white_paths.json';
 import formTxt from '@/public/Inquiry.png'
+import FormDone from '@/public/formDone.png';
 import { PhotoIcon, UserCircleIcon } from '@heroicons/react/20/solid';
 import fbApp from '@/app/fb/firebaseInit';
 
@@ -74,6 +75,7 @@ export default function Home() {
       try {
         const docRef = await addDoc(collection(fbApp, "orders"), formData);
         console.log("Document written with ID: ", docRef.id);
+        //window.location.href = '../';
         formDone(); // Call the function to handle what happens on successful form submission
       } catch (e) {
         console.error("Error adding document: ", e);
@@ -119,7 +121,7 @@ export default function Home() {
   let mainStyle = `flex flex-col justify-between h-[100vh] p-0 overflow-x-hidden`
   //let formStyle = `${formVisible} ${blury} z-10 absolute mt-[240px] self-center p-10 `
   let loadFormStyle = `${formVisible} ${blury} mdm:w-[350px] w-[500px] flex flex-col self-center mt-[80px] m-3 mb-[100px] z-20`
-  let successStyle = `${successShow} flex mx-[60px] flex-col self-center z-40 backdrop-blur-[25px] rounded-lg px-4 bg-[rgba(0,0,0,0.4)] justify-center items-center p-2 gap-2 z-20 mb-[120px] mt-[100px] sm:mt-[100px]`
+  let successStyle = `${successShow} flex mx-[60px] flex-col self-center z-40 backdrop-blur-[25px] rounded-[40px] px-8 py-6 bg-[rgba(0,0,0,0.4)] justify-center items-center  gap-6 z-20 mb-[120px] mt-[100px] sm:mt-[100px]`
   let loadStyle = `${successShow == "hidden" ? "" : "hidden"} ${loadShow} z-[100] fixed inset-0 mx-auto my-auto rounded-lg bg-orngclr flex justify-center items-center w-[80px] h-[70px]`
   let blured = "blur"
   let inputField = "text-orngclr box-border focus:ring-0  bg-[#0000] border-x-0 border-t-0 border-b-2 border-orngclr mb-[2px] w-full"
@@ -144,9 +146,10 @@ export default function Home() {
       </div>
 
       <div className={successStyle} id="tickAnim">
-        <Lottie animationData={doneTick} className="w-[50vh] h-[50vh]  mdm:w-[37vh] mdm:h-[37vh] opacity-90 mb-[-50px]" />
-        <p className="text-center text-lg"><p className='text-orngclr font-bold font-[35px]'>Thank You... </p> We have Recieved your Request and Soon we will Contact You....</p>
-        <a href="/" className="bg-orngclr px-3 py-1 rounded-lg border-2 border-orngclr"> Done </a>
+        {/* <Lottie animationData={doneTick} className="w-[50vh] h-[50vh]  mdm:w-[37vh] mdm:h-[37vh] opacity-90 mb-[-50px]" /> */}
+        <Image src={FormDone} alt="formText" />
+        <p className="text-center text-lg"><p className='text-orngclr font-bold font-[35px]'>Thank You... </p> We have Recieved your Requirement <br></br>Our team will contact you Soon...</p>
+        <a href="/" className="bg-[#ffffff] px-4 py-2 rounded-lg font-bold text-[#000]"> Continue </a>
       </div>
 
       <div className={loadStyle}>
