@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import {useState} from 'react'
 import { Source_Code_Pro } from 'next/font/google'
+import {motion} from 'framer-motion'
 //----IMAGES----//
 import logo from '@/public/navLOGO.png'
 import menu from '@/public/Menu.png'
@@ -23,6 +24,7 @@ const font_1 = Source_Code_Pro({
 export default function Navbar (attr: any) {
     let [navPanelVisibility, toggleNavPanel] = useState('hidden');
     let [navBurger, setNavBurger] = useState('lgm:block');
+    let [btnHover, setBtnHover] = useState(false);
 
     const navlist = `${font_1.className} flex gap-xxl lgm:hidden` ;//custom added gap style
 const btnstr = `${font_1.className} ${attr.show} px-8 py-2 bg-[#ffff] rounded-md lgm:hidden w-fit flex items-center gap-2`
@@ -40,15 +42,10 @@ const btnstr = `${font_1.className} ${attr.show} px-8 py-2 bg-[#ffff] rounded-md
         attr.revert();
     }
 
-    
-
-
-
     let navBurgerStyle = `hidden ${navBurger}` ;
 
     return (
         <div className='m-0 p-2 z-10 flex flex-col w-[100vw] '>
-
             <div className='hidden terraLogo:block self-end px-4 py-[4px] bg-[rgba(0,0,0,0.06)] rounded-[20px]' style={{ backdropFilter: "blur(25px)" }}>
             <Image src={logo} alt="Terracode Logo" className='' style={{height:'70px',width:'130px',}} /> 
             </div>
@@ -58,6 +55,8 @@ const btnstr = `${font_1.className} ${attr.show} px-8 py-2 bg-[#ffff] rounded-md
                 <ul className={navlist}>
                     <a href="../"><li className='hover:text-orngclr cursor-pointer'>Home</li></a>
                     <a href="../Projects"><li className='hover:text-orngclr cursor-pointer'>Projects</li></a>
+                    <a href="../Developers"><li className='hover:text-orngclr cursor-pointer'>Our Team</li></a>
+
 
                     {/* <a href=""><li className='hover:text-orngclr cursor-pointer'>Solution</li></a> */}
                     <a href="https://github.com/Terracode-Dev"><li className='hover:text-orngclr cursor-pointer'>Github</li></a>

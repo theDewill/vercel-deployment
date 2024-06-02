@@ -33,7 +33,7 @@ export default function Home() {
   let [visibility, setVisibility] = useState('hidden');
   let [blury, setBlury] = useState('');
 
-  function makeVisible(){
+  function makeVisible() {
     setVisibility('');
     setBlury('blur');
   }
@@ -42,65 +42,65 @@ export default function Home() {
     setBlury('blur');
   }
 
-  function revertVisibility(){
+  function revertVisibility() {
     setVisibility('hidden');
     setBlury('');
   }
 
 
 
-      let blured = "blur"
-      
-  const handleScroll= () => {
+  let blured = "blur"
+
+  const handleScroll = () => {
     const targetElement = document.getElementById('who');
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth' });
     }
   };
-  
+
 
   return (
 
     <>
 
-    <Helmet>
-      <title>Projects | Terracode</title>
-      <meta name="description" content="Projects crafted by our Developers" />
-    </Helmet>
-    <main className=" p-0 flex flex-col gap-10 overflow-hidden " >
-      <div className='fixed z-30 navblock:backdrop-blur-[25px] fixed z-40 navblock:bg-[rgba(0,0,0,0.4)] 2lg:border-b-[0.5px] border-b-[#fff]'><Navbar func = {navBlur} revert={revertVisibility}  visibility={visibility} /></div>
-      <div className="fixed self-center mt-[100px] z-0">
-      <Hero blury={blured} func={handleScroll} show="hidden"/>
-      </div>
-      
-      
+      <Helmet>
+        <title>Projects | Terracode</title>
+        <meta name="description" content="Projects crafted by our Developers" />
+      </Helmet>
+      <main className=" p-0 flex flex-col gap-10 overflow-hidden " >
+        <div className='fixed z-30 navblock:backdrop-blur-[25px] fixed z-40 navblock:bg-[rgba(0,0,0,0.4)] 2lg:border-b-[0.5px] border-b-[#fff]'><Navbar func={navBlur} revert={revertVisibility} visibility={visibility} /></div>
+        <div className="fixed self-center mt-[100px] z-0">
+          <Hero blury={blured} func={handleScroll} show="hidden" />
+        </div>
+
+
 
         {/* Projects come here */}
-    <div className='mt-[120px] flex flex-col mb-[150px] gap-[20px]'>
-    <div className='text-[#fff] font-bold text-[35px] terraLogo:text-center terraLogo:w-full navblock:ml-[130px]'>
-        Our Products
-      </div>
-      <SimProject blury={blury}/>
-      <AtlotProject blury={blury} />
+        <div className='mt-[120px] flex flex-col mb-[150px] gap-[20px]'>
+          <div className='text-[#fff] font-bold text-[35px] terraLogo:text-center terraLogo:w-full navblock:ml-[130px]'>
+            Our Products
+          </div>
+          <SimProject blury={blury} />
+          <AtlotProject blury={blury} />
 
-      </div>
-        
+        </div>
 
-      <Navblock tile={2}/>
-      <Footer blury={blury}/>
 
-      
-      
-      
-      
-      
-      
+        <Navblock tile={2} />
+        <Footer blury={blury} />
 
-      
 
-      
-      
-    </main>
+
+
+
+
+
+
+
+
+
+
+      </main>
 
     </>
   )

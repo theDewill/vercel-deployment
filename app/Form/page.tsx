@@ -11,7 +11,7 @@ import Navbar from '@/app/Components/Navbar';
 import Navblock from '@/app/Components/Navblock';
 import Hero from '@/app/Components/Hero';
 import Footer from '@/app/Components/Footer';
-import send from '@/public/Send.png'
+import send from '@/public/sendICN.png'
 import doneTick from '@/public/Anim/doneTick.json'
 import sentTick from '@/public/Anim/sentAnim.json';
 import loading from '@/public/Anim/load_white_paths.json';
@@ -180,11 +180,11 @@ export default function Home() {
         <div className="space-y-12">
 
 
-          <div className="border-b border-gray-900/10 pb-12">
+          <div className=" pb-12">
             <h2 className="text-base font-semibold leading-7 text-gray-900 text-orngclr">Personal Information</h2>
             <p className="mt-1 text-sm leading-6 text-gray-600">Enter your correct details in the below fields..</p>
 
-            <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-[1.2rem] sm:grid-cols-6">
               <div className="sm:col-span-6">
 
 
@@ -198,10 +198,11 @@ export default function Home() {
                 <div className="mt-2">
                   <input
                     type="text"
+                    placeholder='eg:- Alex Walter'
                     name="first-name"
                     id="first-name"
                     autoComplete="given-name"
-                    className="block w-full rounded-md border-0 py-1.5 text-orngclr font-medium shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 h-[50px] ring-[#000] py-1.5 text-orngclr font-medium shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -232,10 +233,11 @@ export default function Home() {
                 <div className="mt-2">
                   <input
                     id="mnumber"
+                    placeholder='eg:- (+1) XXX XXX XXXX'
                     name="mnumber"
                     type="text"
                     autoComplete="mobile number"
-                    className="block w-full rounded-md border-0 py-1.5 text-orngclr font-medium shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md h-[50px] border-0 py-1.5 text-orngclr font-medium shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -249,7 +251,7 @@ export default function Home() {
                     id="country"
                     name="country"
                     autoComplete="country-name"
-                    className="block w-full rounded-md border-0 py-1.5 text-orngclr font-medium shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md h-[50px] border-0 py-1.5 text-orngclr font-medium shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
                   >
                     <option>United States</option>
                     <option>Canada</option>
@@ -286,11 +288,12 @@ export default function Home() {
                 </label>
                 <div className="mt-2">
                   <input
+                  placeholder='eg:- Alex@gmail.com'
                     id="email"
                     name="email"
                     type="email"
                     autoComplete="email"
-                    className="block w-full rounded-md border-0 py-1.5 text-orngclr font-medium shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 h-[50px] py-1.5 text-orngclr font-medium shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -298,7 +301,7 @@ export default function Home() {
 
 
 
-              <div className="pb-2 sm:w-[80vw]">
+              {/* <div className="pb-2 sm:w-[80vw]">
                 <label htmlFor="about" className={errorStyles["btype"]}>
                   *please select an option
                 </label>
@@ -347,20 +350,16 @@ export default function Home() {
                     </div>
                   </fieldset>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
 
 
-          <div className="border-b border-gray-900/10 pb-12">
+          <div className="">
             <h2 className="text-base font-semibold leading-7 text-orngclr">Requirement Information</h2>
-            <p className="mt-1 text-sm leading-6 text-gray-600">
-              This information will be revived by our developers and will soon contact you...
-            </p>
-
-            <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 ">
-              <div className="">
+            <div className="mt-2 grid grid-cols-1 gap-x-6 ">
+              {/* <div className="">
 
                 <label htmlFor="username" className={errorStyles["title"]}>
                   *provide a solution category
@@ -382,7 +381,7 @@ export default function Home() {
                     />
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="col-span-full">
 
@@ -412,8 +411,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="border-b border-gray-900/10 pb-12">
-            <h2 className="text-base font-semibold leading-7 text-orngclr">Notifications</h2>
+          {/* <div className="border-b border-gray-900/10 pb-12">
+             <h2 className="text-base font-semibold leading-7 text-orngclr">Notifications</h2>
             <p className="mt-1 text-sm leading-6 text-gray-600">
               We will always let you know about updates and inquery status, how would you like ?
             </p>
@@ -456,18 +455,18 @@ export default function Home() {
 
                 </div>
               </fieldset>
-            </div>
-          </div>
+            </div> 
+          </div>*/}
         </div>
 
         <div className="mt-6 flex items-center justify-end gap-x-6">
-          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/" className="border-2 border-[#ffffff] px-4 rounded-md py-2 text-sm font-semibold leading-6 text-red">
             Cancel
           </a>
           <button
             // onClick = {formDone}
             type="submit"
-            className="rounded-md bg-orngclr px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded-md bg-orngclr px-7 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Send
           </button>

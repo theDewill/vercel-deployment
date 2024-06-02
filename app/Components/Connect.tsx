@@ -46,6 +46,8 @@ export default function Contact_section(attr : any){
                         className={`${poppinsFont.className}  text-center    text-neutral-600 text-[6rem] font-normal cnct:text-[15vw] font-['Poppins'] mt-[-30px]`}
                         style={{color:'#4E4C4C'}}
                         >with us</div>
+
+
                                     
                 </div>
                 
