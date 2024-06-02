@@ -42,7 +42,7 @@ export default function Home() {
 
     event.preventDefault();
     const formContent = new FormData(event.target);
-
+    console.log("form submit called")
     const name = formContent.get("first-name");
     const mobileNumber = formContent.get("mnumber");
     const email = formContent.get("email");
@@ -59,7 +59,7 @@ export default function Home() {
     setdescer(desc ? 'hidden' : 'block');
 
 
-    if (name && mobileNumber && email && (business || personal) && title && desc) {
+    if (name && mobileNumber && email && desc) {
       setLoadShow("");
       setBlury('blur');
       console.log("inside approved");
