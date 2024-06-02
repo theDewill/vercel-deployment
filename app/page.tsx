@@ -105,7 +105,7 @@ export default function Home() {
         <HomePage blury={blury} />
         <Services blury={blury} />
 
-        <div className='flex flex-col'>
+        <div className='flex flex-col my-[50px]'>
         <div className={`${poppinsFont.className}  text-center mb-[10px] text-[3rem] text-[#ffffff] font-normal cnct:text-[2.5rem] font-['Poppins'] mt-[7px]`}
                         
                         >Let&apos;s craft what you need<span className='text-orngclr'> . . .</span></div>

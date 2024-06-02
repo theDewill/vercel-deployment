@@ -51,7 +51,7 @@ export default function Hero (attr: any) {
             </motion.div>
             
             {/* text */}
-
+            {/* &quot;We <span className="text-orngclr">Craft</span> what you <span className="text-orngclr">Crave</span>&quot; */}
             
             <div className={txtStyle}>
                 <motion.section initial={{opacity:0}} animate={{opacity:1}} transition={{ duration: 1 }} className="text-orngclr text-4xl mdm:text-3xl font-normal">IT Solutions and Beyond</motion.section>
