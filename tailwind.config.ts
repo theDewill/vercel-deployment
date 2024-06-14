@@ -19,6 +19,7 @@ const config: Config = {
       'navblock' : {'min' : '500px'},
       'terraLogo' : {'max' : '500px'},
       'navblockR' : {'min' : '500px' , 'max': '1088px'},
+      'formMid' : {'min' : '768px' , 'max': '970px'},
       'mdm':{'max': '768px'},
       'lgm':{'max': '1088px'},
       'sm': {'max': '500px'},
@@ -31,6 +32,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'contact-gradient-1': 'linear-gradient(90deg, rgba(255,0,0,1) 7%, rgba(255,117,0,1) 52%, rgba(129,81,0,1) 100%)',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
           'terrianImg' : "url('/public/projects.png')",

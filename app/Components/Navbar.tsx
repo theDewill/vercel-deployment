@@ -53,18 +53,18 @@ const btnstr = `${font_1.className} ${attr.show} px-8 py-2 bg-[#ffff] rounded-md
                <Image src={logo} alt="Terracode Logo" className='mr-4 ' style={{height:'70px',width:'130px',}} /> 
                <div>
                 <ul className={navlist}>
-                    <a href="../"><li className='hover:text-orngclr cursor-pointer'>Home</li></a>
-                    <a href="../Projects"><li className='hover:text-orngclr cursor-pointer'>Projects</li></a>
-                    <a href="../Developers"><li className='hover:text-orngclr cursor-pointer'>Our Team</li></a>
+                    <a href="../"><li className='hover:text-[rgb(124,124,124)] cursor-pointer transition-colors duration-300 ease-in-out'>Home</li></a>
+                    <a href="../Projects"><li className='hover:text-[rgb(124,124,124)] cursor-pointer transition-colors duration-300 ease-in-out'>Projects</li></a>
+                    <a href="../Developers"><li className='hover:text-[rgb(124,124,124)] cursor-pointer transition-colors duration-300 ease-in-out'>Our Team</li></a>
 
 
                     {/* <a href=""><li className='hover:text-orngclr cursor-pointer'>Solution</li></a> */}
-                    <a href="https://github.com/Terracode-Dev"><li className='hover:text-orngclr cursor-pointer'>Github</li></a>
-                    <a href="" onClick={(e) => { e.preventDefault(); attr.footer(); }}><li className='hover:text-orngclr cursor-pointer'>Contact</li></a>
+                    <a href="https://github.com/Terracode-Dev"><li className='hover:text-[rgb(124,124,124)] cursor-pointer transition-colors duration-300 ease-in-out'>Github</li></a>
+                    <a href="../Contact" ><li className='hover:text-[rgb(124,124,124)] cursor-pointer transition-colors duration-300 ease-in-out'>Contact</li></a>
                 </ul>
                </div>
 
-               <a href="../Form" className={btnstr}> 
+               <a href="../Contact" className={btnstr}> 
                <Image src={send} alt="send Icon" className='' style={{height:'25px',width:'25px',}} />
                </a>
 

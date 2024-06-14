@@ -47,7 +47,7 @@ export default function Navblock (attr : any) {
                     
                     
                         <li >
-                        <a href="../Form" className={attr.tile == 4 ? hlTile : nTile}>
+                        <a href="../Contact" className={attr.tile == 4 ? hlTile : nTile}>
                         <Image src={sendNF} alt="Home" className='' style={{height:'25px',width:'25px',}} /> 
                             Contact
                             </a>

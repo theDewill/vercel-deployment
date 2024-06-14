@@ -129,10 +129,10 @@ export default function Home() {
 
 <>
 
-<Helmet>
+{/* <Helmet>
       <title>Contact | Terracode</title>
       <meta name="description" content="Provide us with your requirement" />
-    </Helmet>
+    </Helmet> */}
     <div className={mainStyle}>
 
 
