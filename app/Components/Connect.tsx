@@ -72,7 +72,7 @@ export default function Contact_section(attr : any){
                     {/* button */}
                     <div className="button border-2 h-fit w-fit px-4 py-2 absolute z-1 flex justify-center items-center hover:text-orngclr hover:border-ashclr"
                     style={{color:'balck',borderColor:'#E87A15',}}>
-                        <a href="../Form"
+                        <a href="../Contact"
                         className="button_content text-4xl lg:text-3xl">
                             Connect
                         </a>
