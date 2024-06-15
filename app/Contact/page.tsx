@@ -207,7 +207,7 @@ export default function Home() {
         ]
     }
 
-    console.log(inputFieldState);
+    
 
     let [loadShow, setLoadShow] = useState('hidden');
 
