@@ -170,7 +170,7 @@ export default function Home() {
     });
 
 
-
+    //Each tile content 
     let FormContent = {
         cards: [
             {
