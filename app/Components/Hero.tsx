@@ -74,9 +74,9 @@ export default function Hero(attr: any) {
           <Image src={hometxt} alt="homeTxt" className="" />
           <Image src={orngBall} alt="orngBall" className="w-[50px]" />
         </div>
-        <div className="flex justify-start w-full">
+        {/* <div className="flex justify-start w-full">
           <Image src={ashBall} alt="ashBall" className="w-[50px]" />
-        </div>
+        </div> */}
       </motion.div>
 
       {/* text */}
@@ -95,7 +95,7 @@ export default function Hero(attr: any) {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="font-semibold text-6xl mdm:text-5xl"
+          className="font-semibold text-6xl mdm:text-5xl sm:text-4xl"
         >
           <section>
             We build <br /> Software Solutions

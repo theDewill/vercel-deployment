@@ -10,14 +10,14 @@ const Cominfo = (attr: any) => {
   return (
     <section
       id="who"
-      className={`${attr.blury} mx-[90px] mdm:mx-[10px] flex flex-col gap-[50px]`}
+      className={`${attr.blury} mt-[10vh] mx-[90px] mdm:mx-[10px] flex flex-col`}
     >
-      <div className="whopart_container px-4 mdm:px-[1rem] py-4 mdm:py-[3rem] w-[100%]  ">
+      <div className="whopart_container px-4 mdm:px-[1rem] py-4 w-[100%]  ">
         <div className="w-[100%] flex justify-end">
           <Image src="/us.png" alt="who" width={40} height={100} />
         </div>
 
-        <div className=" md:text-[40px] text-[2.8rem] sm:text-[35px] sm:mb-[70px] z-10">
+        <div className=" md:text-[40px] text-[2.8rem] sm:text-[35px] z-10">
           <TypewriterComponent
             options={{
               strings: ["About us //::"],
@@ -32,7 +32,7 @@ const Cominfo = (attr: any) => {
 
       {/*image begins*/}
 
-      <div className="relative flex justify-center md:h-[300px]">
+      <div className="relative flex justify-center h-[500px]">
         <Image src={"/backCircles.svg"} alt="logo" width={1250} height={100} />
 
         {/* logo and text */}
