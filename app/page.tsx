@@ -74,7 +74,7 @@ export default function Home() {
         />
       </Helmet>
 
-      <div className=" p-0 flex flex-col gap-10 overflow-hidden">
+      <div className="p-0 flex flex-col gap-[5vh] overflow-hidden">
         <motion.nav
           initial={{ marginTop: "-100px" }}
           animate={{ marginTop: "0px" }}

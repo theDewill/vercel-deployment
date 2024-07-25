@@ -48,7 +48,7 @@ export default function SimProject(attr: any) {
           </motion.div>
 
           <motion.div
-            className={`${attr.blury}  h-auto w-[40vw] lgm:w-[80vw] flex flex-col lgm:items-center text-orngclr bg-[#000000] rounded-[40px] self-center p-6 pl-8 mdm:rounded-[40px]`}
+            className={`${attr.blury}  h-auto w-[40vw] lgm:w-[80vw] flex flex-col lgm:items-center text-orngclr bg-[#000000] rounded-2xl self-center p-6 pl-8 mdm:rounded-[40px]`}
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -57,13 +57,13 @@ export default function SimProject(attr: any) {
               {project.topic}
             </h1>
 
-            <section className="mdm:text-[14px] font-medium text-[#ffff] lgm:text-center">
+            <section className="mdm:text-[14px] text-[#ffff] lgm:text-center">
               <p className="pt-2">{project.body}</p>
             </section>
 
             <a
               href={`mailto:contact@terracodedev.com?subject=Terracode - Product Inquiries - ${project.topic}`}
-              className={`px-4 py-2 bg-[#ffff] rounded-md w-fit flex items-center gap-2 mt-5`}
+              className={`px-4 py-2 bg-[#ffff] rounded-lg w-fit flex items-center gap-2 mt-5`}
             >
               <p className="text-[#000000] font-medium">
                 Inquire about the Product

@@ -49,7 +49,7 @@ export default function Footer(attr: any) {
           </div>
         </div>
 
-        <div className="flex flex-col items-start gap-3 flex">
+        <div className="flex flex-col items-start sm:item-center gap-3">
           <h1 className="font-bold">Contact Us</h1>
           <div>
             <div className="flex gap-3 items-center">

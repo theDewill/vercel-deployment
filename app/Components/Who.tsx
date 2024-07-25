@@ -10,7 +10,7 @@ const Cominfo = (attr: any) => {
   return (
     <section
       id="who"
-      className={`${attr.blury} mt-[10vh] mx-[90px] mdm:mx-[10px] flex flex-col`}
+      className={`${attr.blury} mt-[10vh] sm:mt-[1vh] mx-[90px] mdm:mx-[10px] flex flex-col`}
     >
       <div className="whopart_container px-4 mdm:px-[1rem] py-4 w-[100%]  ">
         <div className="w-[100%] flex justify-end">
