@@ -18,7 +18,7 @@ export default function SimProject(attr: any) {
     {
       topic: "Medigo",
       swap: true,
-      body: "Medigo is an advanced software solution designed for healthcare professionals to efficiently manage appointments and patient data. It offers seamless cloud storage for patient information, automatic prescription and bill generation, and AI-powered listening features for transcribing conversations. Medigo is ideal for hospital management, private dispensary management, and secure patient data backup for doctors, ensuring streamlined operations and enhanced patient care.",
+      body: "Medigo is an advanced healthcare software solution that helps professionals manage appointments and patient data. It features cloud storage, automatic prescription & bill generation, with AI-powered transcription like features. Ideal for hospital and private dispensary management, Medigo ensures secure data backup and streamlined operations.",
       img: [medone, medtwo],
     },
   ];
