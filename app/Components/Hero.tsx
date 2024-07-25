@@ -97,19 +97,21 @@ export default function Hero(attr: any) {
           transition={{ duration: 1 }}
           className="font-semibold text-6xl mdm:text-5xl"
         >
-          <span className="text-orngclr">Propel Your Vision Forward </span>
-          <br /> with <br />
-          Our Cutting-Edge Software
+          <section>
+            We build <br /> Software Solutions
+          </section>
+          <span className="text-orngclr">Propeling Your Vision Forward </span>
         </motion.section>
-        <motion.button
+        <motion.a
+          href="./Contact"
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="py-3 px-6  bg-[#000000a1] text-orngclr border border-[#000000a1] w-fit font-light rounded-2xl font-bold"
-          onClick={attr.func}
+          className="py-3 px-6  bg-[#ffff] text-orngclr font-bold border border-[#000000a1] w-fit rounded-2xl"
+          //onClick={attr.func}
         >
-          Start Exploring
-        </motion.button>
+          {"Let's Talk"}
+        </motion.a>
       </div>
     </main>
   );
