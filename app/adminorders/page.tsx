@@ -41,7 +41,7 @@ export default function Orders(attr: any) {
       const OrdersCollection = collection(fbApp, "orders");
       const querySnapshot = await getDocs(OrdersCollection);
       let counter = 0;
-      const ordersArray: dev[] = querySnapshot.docs
+      const ordersArray: any = querySnapshot.docs
         .map((doc) => {
           // Extracting the document data
 
