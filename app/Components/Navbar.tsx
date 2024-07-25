@@ -106,7 +106,7 @@ export default function Navbar(attr: any) {
             className=""
             style={{ height: "25px", width: "25px" }}
           />
-          <p className="text-[#000000]">Email Us</p>
+          <p className="text-[#000000]">Inquiries</p>
         </a>
 
         <button onClick={makeNavVisible} className="hidden navblockR:block">
