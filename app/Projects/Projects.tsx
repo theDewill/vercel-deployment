@@ -23,32 +23,32 @@ export default function SimProject(attr: any) {
     },
   ];
   return (
-    <div className="flex flex-col mt-[100px] gap-[100px]">
+    <div className="flex flex-col mt-[100px] gap-[200px]">
       {content.map((project, index) => (
         <div
           key={index}
-          className="self-center flex mdm:flex-col gap-10 items-center justify-center"
+          className="self-center flex lgm:flex-col gap-10 items-center justify-center"
         >
           <motion.div
-            className="flex flex-col justify-center w-[30vw] mdm:w-[80vw]"
+            className="flex flex-col justify-center w-[550px] lgm:w-[50vw] sm:w-[65vw]"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <Image
               src={project.img[0]}
-              className={`h-auto ${project.swap ? "z-10" : "z-20"} w-[18vw] mdm:w-[60vw] rounded-md self-start`}
+              className={`h-auto ${project.swap ? "z-10" : "z-20"} w-[400px] lgm:w-[40vw] sm:w-[55vw] rounded-md self-start`}
               alt="zimular"
             />
             <Image
               src={project.img[1]}
-              className={`h-auto ${project.swap ? "z-20" : "z-10"} w-[18vw] mdm:w-[60vw] mt-[-80px] mdm:mt-[-20px] rounded-md self-end`}
+              className={`h-auto ${project.swap ? "z-20" : "z-10"} w-[400px] lgm:w-[40vw] sm:w-[55vw] mt-[-80px] mdm:mt-[-20px] rounded-md self-end`}
               alt="zimular"
             />
           </motion.div>
 
           <motion.div
-            className={`${attr.blury}  h-auto w-[40vw] mdm:w-[80vw] flex flex-col mdm:items-center text-orngclr bg-[#000000] rounded-[40px] self-center p-6 pl-8 mdm:rounded-[40px]`}
+            className={`${attr.blury}  h-auto w-[40vw] lgm:w-[80vw] flex flex-col lgm:items-center text-orngclr bg-[#000000] rounded-[40px] self-center p-6 pl-8 mdm:rounded-[40px]`}
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -57,7 +57,7 @@ export default function SimProject(attr: any) {
               {project.topic}
             </h1>
 
-            <section className="mdm:text-[14px] font-medium text-[#ffff] mdm:text-center">
+            <section className="mdm:text-[14px] font-medium text-[#ffff] lgm:text-center">
               <p className="pt-2">{project.body}</p>
             </section>
 
