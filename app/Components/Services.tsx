@@ -84,7 +84,7 @@ export default function Services(attr: any) {
         <Image src={buildtxt} alt="buildText"></Image>
       </div>
 
-      <div className="circles flex gap-2 flex flex-wrap items-center justify-center">
+      <div className="circles flex gap-4 flex-wrap items-center justify-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -105,7 +105,7 @@ export default function Services(attr: any) {
           <Tile
             img={tileImgs.mobile}
             className="mr-[-20px]"
-            topic="Mobile App Development"
+            topic="Mobile Application Development"
             desc="We are experts in creating state-of-the-art mobile applications, offering both hybrid and native development options. Our approach ensures optimal performance and adaptability, providing tailored solutions that meet the unique demands of your business."
           />
         </motion.div>

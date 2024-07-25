@@ -57,7 +57,7 @@ export default function SimProject(attr: any) {
               {project.topic}
             </h1>
 
-            <section className="mdm:text-[14px] text-[#ffff]">
+            <section className="mdm:text-[14px] font-medium text-[#ffff] mdm:text-center">
               <p className="pt-2">{project.body}</p>
             </section>
 
@@ -65,7 +65,9 @@ export default function SimProject(attr: any) {
               href={`mailto:contact@terracodedev.com?subject=Terracode - Product Inquiries - ${project.topic}`}
               className={`px-4 py-2 bg-[#ffff] rounded-md w-fit flex items-center gap-2 mt-5`}
             >
-              <p className="text-[#000000]">Inquire about the Product</p>
+              <p className="text-[#000000] font-medium">
+                Inquire about the Product
+              </p>
             </a>
           </motion.div>
         </div>

@@ -10,7 +10,7 @@ import hometxt from "@/public/HOME.png";
 export default function Hero(attr: any) {
   // scrollToElement.js
 
-  let mainStyle = `${attr.blury} flex justify-center items-center ckl:mt-[280px] ckl:mb-[300px] p-0`;
+  let mainStyle = `${attr.blury} flex justify-center items-center ckl:mt-[30vh] ckl:mb-[300px] p-0`;
   let txtStyle: any = `${attr.show} absolute flex flex-col text-center items-center z-10 gap-16 mdm:gap-9`;
   return (
     <main className={mainStyle}>

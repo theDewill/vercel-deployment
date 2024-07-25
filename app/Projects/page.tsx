@@ -68,8 +68,8 @@ export default function Home() {
 
         {/* Projects come here */}
         <div className="mt-[120px] z-[1000] flex flex-col mb-[150px] gap-[20px]">
-          <div className="text-[#fff] px-[50px]  ckl:text-center terraLogo:w-full ">
-            <section className="font-bold text-[35px]">
+          <div className="text-[#fff] px-[250px] sm:px-[8px]  ckl:text-center terraLogo:w-full ">
+            <section className="font-bold text-[45px]">
               Our <span className="text-orngclr">Products</span>
             </section>
 

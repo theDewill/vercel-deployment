@@ -79,7 +79,7 @@ export default function Home() {
           initial={{ marginTop: "-100px" }}
           animate={{ marginTop: "0px" }}
           transition={{ duration: 1.0 }}
-          className="navblock:backdrop-blur-[25px] fixed z-40 navblock:bg-[rgba(0,0,0,0.4)] 2lg:border-b-[0.5px] border-b-[#fff]"
+          className="navblock:backdrop-blur-[25px] sm:absolute fixed z-40 navblock:bg-[rgba(0,0,0,0.4)] 2lg:border-b-[0.5px] border-b-[#fff]"
         >
           <Navbar
             func={navBlur}
@@ -88,7 +88,7 @@ export default function Home() {
             footer={handleFootScroll}
           />
         </motion.nav>
-        <div className="mt-[20vh]">
+        <div className="mt-[17vh]">
           <Hero blury={blury} func={handleScroll} />
         </div>
 
