@@ -60,7 +60,7 @@ export default function Hero(attr: any) {
       >
         {/* <Lottie animationData={worldBlack} className="absolute  w-[150vh] h-[150vh]  mdm:w-[97vh] mdm:h-[97vh] opacity-60"  /> */}
         <div
-          className={`rounded-full h-[80vh] w-[80vh] mdm:h-[50vh] mdm:w-[50vh] overflow-hidden p-0 [background:linear-gradient(180deg,_rgba(232,_122,_21,_0.12),_rgba(89,_45,_4,_0.87)_50%,_rgba(248,_121,_3,_0))]`}
+          className={`rounded-full h-[700px] w-[700px] mdm:h-[500px] mdm:w-[500px] sm:w-[380px] sm:h-[380px] overflow-hidden p-0 [background:linear-gradient(180deg,_rgba(232,_122,_21,_0.12),_rgba(89,_45,_4,_0.87)_50%,_rgba(248,_121,_3,_0))]`}
         ></div>
       </motion.div>
 
@@ -68,7 +68,7 @@ export default function Hero(attr: any) {
         initial={{ y: 30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="absolute self-start flex flex-col justify-between h-[80vh] w-[90vw]"
+        className="absolute top-[5vh] self-start flex flex-col justify-between h-[80vh] w-[90vw]"
       >
         <div className="flex justify-between">
           <Image src={hometxt} alt="homeTxt" className="" />
