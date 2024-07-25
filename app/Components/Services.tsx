@@ -131,7 +131,7 @@ export default function Services(attr: any) {
             img={tileImgs.AI}
             className="mr-[-20px]"
             topic="Artificial Intelligence and Research"
-            desc="At the forefront of technological advancement, our dedicated AI research and innovation team develops groundbreaking artificial intelligence technologies. These innovations drive industry transformation and set new benchmarks for what technology can achieve."
+            desc="Our AI research and innovation team excels in developing and integrating cutting-edge artificial intelligence technologies. We specialize in AI model training and development, driving industry transformation and setting new benchmarks for technological advancement."
           />
         </motion.div>
       </div>
