@@ -88,11 +88,11 @@ export default function Hero(attr: any) {
             Software
           </section>
 
-          <span className="text-[#ffff] text-3xl">{`"`}</span>
-          <span className="text-orngclr text-2xl">
+          {/* <span className="text-[#ffff] text-3xl">{`"`}</span> */}
+          <span className="text-orngclr font-bold text-2xl">
             Propeling Your Vision Forward
           </span>
-          <span className="text-[#ffff] text-3xl">{`"`}</span>
+          {/* <span className="text-[#ffff] text-3xl">{`"`}</span> */}
         </motion.section>
 
         <motion.section
