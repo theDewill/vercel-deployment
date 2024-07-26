@@ -101,7 +101,7 @@ export default function Home() {
           <div
             className={`${poppinsFont.className}  text-center mb-[10px] text-[3rem] text-[#ffffff] font-normal cnct:text-[2.5rem] font-['Poppins'] mt-[7px]`}
           >
-            Let&apos;s craft what you Crave
+            {"Let's Craft What You Crave Today"}
             <span className="text-orngclr"> . . .</span>
           </div>
           <Contact

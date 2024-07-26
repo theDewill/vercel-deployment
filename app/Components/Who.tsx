@@ -23,7 +23,7 @@ const Cominfo = (attr: any) => {
           />
         </div>
 
-        <div className=" md:text-[40px] sm:mt-[2vh] text-[2.8rem] sm:text-[35px] z-10">
+        <div className=" md:text-[40px] sm:mt-[2vh] 2lg:ml-[9vw] text-[2.8rem] sm:text-[35px] z-10">
           <TypewriterComponent
             options={{
               strings: ["About us //::"],
