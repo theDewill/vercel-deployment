@@ -88,11 +88,11 @@ export default function Hero(attr: any) {
             Software
           </section>
 
-          <span classname="text-[#ffff] text-xl">{`"`}</span>
+          <span className="text-[#ffff] text-3xl">{`"`}</span>
           <span className="text-orngclr text-2xl">
             Propeling Your Vision Forward
           </span>
-          <span classname="text-[#ffff] text-xl">{`"`}</span>
+          <span className="text-[#ffff] text-3xl">{`"`}</span>
         </motion.section>
 
         <motion.section
@@ -102,9 +102,9 @@ export default function Hero(attr: any) {
           className="font-semibold sm:hidden text-7xl leading-[11vh] mdm:text-5xl "
         >
           <section>We Build Software</section>
-          <span classname="text-[#ffff]">{`"`}</span>
+          <span className="text-[#ffff]">{`"`}</span>
           <span className="text-orngclr ">Propeling Your Vision Forward</span>
-          <span classname="text-[#ffff]">{`"`}</span>
+          <span className="text-[#ffff]">{`"`}</span>
         </motion.section>
         <motion.a
           href="./Contact"
