@@ -81,15 +81,18 @@ export default function Hero(attr: any) {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="font-semibold hidden sm:block text-5xl text-left ml-[22px]"
+          className="font-semibold hidden sm:block text-5xl text-center"
         >
           <section>
-            We <br />
-            Build
-            <br /> Software
+            We Build <br />
+            Software
           </section>
 
-          <span className="text-orngclr ">Propeling Your Vision Forward</span>
+          <span classname="text-[#ffff] text-xl">{`"`}</span>
+          <span className="text-orngclr text-2xl">
+            Propeling Your Vision Forward
+          </span>
+          <span classname="text-[#ffff] text-xl">{`"`}</span>
         </motion.section>
 
         <motion.section
@@ -108,7 +111,7 @@ export default function Hero(attr: any) {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="py-3 px-6  bg-[#ffff] text-orngclr sm:self-start sm:ml-[22px] font-bold border border-[#000000a1] w-fit rounded-2xl"
+          className="py-3 px-6  bg-[#ffff] text-orngclr sm:self-center  font-bold border border-[#000000a1] w-fit rounded-2xl"
           //onClick={attr.func}
         >
           {"Let's Talk"}

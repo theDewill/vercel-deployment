@@ -230,7 +230,7 @@ export default function Home() {
           <Image src={formTxt} alt="formText" />
         </div>
 
-        <nav id="navbar" className="z-30 border-b-[0.5px] border-b-[#fff]">
+        <nav id="navbar" className="z-30 ">
           <Navbar show="hidden" func={navBlur} revert={revertVisibility} />
         </nav>
         <div className="fixed self-center mt-[80px]">
