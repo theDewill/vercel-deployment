@@ -48,7 +48,8 @@ export default function SimProject(attr: any) {
           </motion.div>
 
           <motion.div
-            className={`${attr.blury}  h-auto w-[40vw] lgm:w-[80vw] flex flex-col lgm:items-center text-orngclr bg-[#000000] rounded-2xl self-center py-8 pl-8 sm:pr-8 mdm:rounded-[40px]`}
+            className={`${attr.blury}  h-auto w-[40vw] lgm:w-[80vw] flex flex-col lgm:items-center text-orngclr bg-[rgb(0,0,0,35%)] rounded-2xl self-center py-10 pl-8 sm:pr-8 mdm:rounded-[40px]`}
+            style={{ backdropFilter: "blur(55px)" }}
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}

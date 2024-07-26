@@ -68,7 +68,7 @@ export default function Hero(attr: any) {
         initial={{ y: 30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="absolute top-[12vh] sm:top-[10vh] self-start flex flex-col justify-between h-[80vh] w-[90vw]"
+        className="absolute top-[12vh] sm:top-[7vh] self-start flex flex-col justify-between h-[80vh] w-[90vw]"
       >
         <div className="flex justify-between">
           <Image src={hometxt} alt="homeTxt" className="" />
