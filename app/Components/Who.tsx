@@ -10,14 +10,20 @@ const Cominfo = (attr: any) => {
   return (
     <section
       id="who"
-      className={`${attr.blury} mt-[10vh] sm:mt-[1vh] mx-[90px] mdm:mx-[10px] flex flex-col`}
+      className={`${attr.blury} 2lg:mt-[10vh] sm:mt-[26vh] mt-[29vh] mx-[50px] mdm:mx-[10px] flex flex-col`}
     >
       <div className="whopart_container px-4 mdm:px-[1rem] py-4 w-[100%]  ">
         <div className="w-[100%] flex justify-end">
-          <Image src="/us.png" alt="who" width={40} height={100} />
+          <Image
+            src="/us.png"
+            alt="who"
+            width={40}
+            height={100}
+            className="h-auto w-[50px]"
+          />
         </div>
 
-        <div className=" md:text-[40px] text-[2.8rem] sm:text-[35px] z-10">
+        <div className=" md:text-[40px] sm:mt-[2vh] text-[2.8rem] sm:text-[35px] z-10">
           <TypewriterComponent
             options={{
               strings: ["About us //::"],

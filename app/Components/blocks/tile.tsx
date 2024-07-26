@@ -65,13 +65,13 @@ export default function Tile(args: any) {
               alt="Terracode Logo"
               style={{ height: "50px", width: "53px" }}
             />
-            <div className="text-orngclr font-medium text-[1rem]">
+            <div className="text-orngclr font-semibold text-[1.2rem]">
               {" "}
               {args.topic}
             </div>
           </div>
           <div
-            className={`text-[0.85rem] mt-2 text-center transition duration-300 ease-in-out ${isFlipped ? "hidden" : "block"}`}
+            className={`text-[0.85rem] mt-2 font-medium text-center transition duration-300 ease-in-out ${isFlipped ? "hidden" : "block"}`}
             style={isHover ? { color: "black" } : { color: "white" }}
           >
             {args.desc}

@@ -10,7 +10,7 @@ import hometxt from "@/public/HOME.png";
 export default function Hero(attr: any) {
   // scrollToElement.js
 
-  let mainStyle = `${attr.blury} flex justify-center items-center ckl:mt-[30vh] ckl:mb-[300px] p-0`;
+  let mainStyle = `${attr.blury} flex justify-center items-center ckl:mt-[32vh] p-0`;
   let txtStyle: any = `${attr.show} absolute flex flex-col text-center items-center z-10 gap-16 mdm:gap-9`;
   return (
     <main className={mainStyle}>
@@ -68,46 +68,47 @@ export default function Hero(attr: any) {
         initial={{ y: 30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="absolute sm:top-[5vh] top-[12vh] self-start flex flex-col justify-between h-[80vh] w-[90vw]"
+        className="absolute top-[12vh] sm:top-[10vh] self-start flex flex-col justify-between h-[80vh] w-[90vw]"
       >
         <div className="flex justify-between">
           <Image src={hometxt} alt="homeTxt" className="" />
           <Image src={orngBall} alt="orngBall" className="w-[50px]" />
         </div>
-        {/* <div className="flex justify-start w-full">
-          <Image src={ashBall} alt="ashBall" className="w-[50px]" />
-        </div> */}
       </motion.div>
 
-      {/* text */}
-      {/* &quot;We <span className="text-orngclr">Craft</span> what you <span className="text-orngclr">Crave</span>&quot; */}
-
       <div className={txtStyle}>
-        {/* <motion.section
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-orngclr text-4xl mdm:text-3xl font-normal"
-        >
-          We Craft Cutting-Edge Software Solutions
-        </motion.section> */}
         <motion.section
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="font-semibold text-6xl mdm:text-5xl sm:text-4xl"
+          className="font-semibold hidden sm:block text-5xl text-left ml-[22px]"
         >
           <section>
-            We build <br /> Software Solutions
+            We <br />
+            Build
+            <br /> Software
           </section>
-          <span className="text-orngclr">Propeling Your Vision Forward </span>
+
+          <span className="text-orngclr ">Propeling Your Vision Forward</span>
+        </motion.section>
+
+        <motion.section
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="font-semibold sm:hidden text-7xl leading-[11vh] mdm:text-5xl "
+        >
+          <section>We Build Software</section>
+          <span classname="text-[#ffff]">{`"`}</span>
+          <span className="text-orngclr ">Propeling Your Vision Forward</span>
+          <span classname="text-[#ffff]">{`"`}</span>
         </motion.section>
         <motion.a
           href="./Contact"
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="py-3 px-6  bg-[#ffff] text-orngclr font-bold border border-[#000000a1] w-fit rounded-2xl"
+          className="py-3 px-6  bg-[#ffff] text-orngclr sm:self-start sm:ml-[22px] font-bold border border-[#000000a1] w-fit rounded-2xl"
           //onClick={attr.func}
         >
           {"Let's Talk"}

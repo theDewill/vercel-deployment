@@ -106,7 +106,7 @@ export default function Services(attr: any) {
           <Tile
             img={tileImgs.mobile}
             className="mr-[-20px]"
-            topic="Mobile Application Development"
+            topic="Mobile App Development"
             desc="We are experts in creating state-of-the-art mobile applications, offering both hybrid and native development options. Our approach ensures optimal performance and adaptability, providing tailored solutions that meet the unique demands of your business."
           />
         </motion.div>
@@ -131,7 +131,7 @@ export default function Services(attr: any) {
           <Tile
             img={tileImgs.AI}
             className="mr-[-20px]"
-            topic="Artificial Intelligence and Research"
+            topic="Artificial Intelligence"
             desc="Our AI research and innovation team excels in developing and integrating cutting-edge artificial intelligence technologies. We specialize in AI model training and development, driving industry transformation and setting new benchmarks for technological advancement."
           />
         </motion.div>
