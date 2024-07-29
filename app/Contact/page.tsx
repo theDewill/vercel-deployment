@@ -336,7 +336,7 @@ export default function Home() {
               discuss your requirements.
             </p>
             <p className="text-[#ffffff] font-bold text-xl mt-6">
-              {"(+94)775824406"}
+              {"(+94)770086857"}
             </p>
           </div>
         </div>

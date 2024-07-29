@@ -59,7 +59,7 @@ export default function Footer(attr: any) {
 
             <div className="flex gap-3 items-center">
               <Image src={phone} alt="gmail_image" className="w-[25px]" />
-              <p className="text-[#000]">+94775824406</p>
+              <p className="text-[#000]">{"(+94) 0770086857"}</p>
             </div>
           </div>
         </div>
