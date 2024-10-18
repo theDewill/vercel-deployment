@@ -95,7 +95,7 @@ export const AnimatedTooltip = (attr: any) => {
       <div className="flex gap-[80px] flex-wrap justify-center items-center">
         {developers.map((dev, idx) => (
           <motion.div
-            className="-mr-4 relative group flex flex-col items-center"
+            className="-mr-4 relative group flex flex-col items-center gap-4"
             key={dev.name}
             onMouseEnter={() => setHoveredIndex(dev.id)}
             onMouseLeave={() => setHoveredIndex(null)}
