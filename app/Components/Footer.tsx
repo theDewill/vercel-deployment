@@ -28,9 +28,6 @@ export default function Footer(attr: any) {
             <li>
               <a>Growth</a>
             </li>
-            <li>
-              <a>Carriers</a>
-            </li>
           </ul>
         </div>
 
