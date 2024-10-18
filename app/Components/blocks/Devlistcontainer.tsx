@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 import { collection, getDocs } from "firebase/firestore";
-import fbApp from '@/app/fb/firebaseInit';
+import fbApp from "@/app/fb/firebaseInit";
 
 import {
   motion,
@@ -21,13 +21,18 @@ interface dev {
   img: string;
 }
 
-async function getDevelopers() : Promise<dev[]> {
+async function getDevelopers(): Promise<dev[]> {
   try {
     const developersCollection = collection(fbApp, "developers");
     const querySnapshot = await getDocs(developersCollection);
-    const developersArray : dev[] = querySnapshot.docs.map(doc => ({
+    const developersArray: dev[] = querySnapshot.docs.map((doc) => ({
       did: doc.id,
-      ...doc.data() as {name : string; desc : string; img : string; id : number}
+      ...(doc.data() as {
+        name: string;
+        desc: string;
+        img: string;
+        id: number;
+      }),
     }));
     console.log("Developers fetched successfully");
     return developersArray; // Returns the array of developers
@@ -37,16 +42,12 @@ async function getDevelopers() : Promise<dev[]> {
   }
 }
 
-
-
 export const AnimatedTooltip = (attr: any) => {
-
-
   let [devLoad, setDevLoad] = useState(false);
   let [developers, setDevelopers] = useState<dev[]>([]);
 
   async function handleDevs() {
-    let devs : dev[] = await getDevelopers();
+    let devs: dev[] = await getDevelopers();
     setDevelopers(devs);
     setDevLoad(true);
     attr.changeLoad();
@@ -62,12 +63,12 @@ export const AnimatedTooltip = (attr: any) => {
   // rotate the tooltip
   const rotate = useSpring(
     useTransform(x, [-100, 100], [-45, 45]),
-    springConfig
+    springConfig,
   );
   // translate the tooltip
   const translateX = useSpring(
     useTransform(x, [-100, 100], [-50, 50]),
-    springConfig
+    springConfig,
   );
   const handleMouseMove = (event: any) => {
     const halfWidth = event.target.offsetWidth / 2;
@@ -75,26 +76,26 @@ export const AnimatedTooltip = (attr: any) => {
   };
 
   return (
-
-
-    <motion.div className="flex flex-col items-center justify-start gap-[50px] w-full h-full px-4 py-4 bg-[rgb(18,18,18)] rounded-[20px] shadow-xl"
+    <motion.div
+      className="flex flex-col items-center justify-start gap-[50px] w-full h-full px-4 py-4 bg-[rgb(18,18,18)] rounded-[20px] shadow-xl"
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       transition={{
         type: "spring",
         duration: 0.1,
         stiffness: 160,
-        damping: 10
-      }}>
-
+        damping: 10,
+      }}
+    >
       <div className="font-bebas font-bold text-[25px] text-center">
-        &quot;We Craft Tomorrow, Pixel by Pixel – <span className="text-orngclr">Where Code Meets Creativity.</span>&quot;
+        &quot;We Craft Tomorrow, Pixel by Pixel –{" "}
+        <span className="text-orngclr">Where Code Meets Creativity.</span>&quot;
       </div>
 
       <div className="flex gap-[80px] flex-wrap justify-center items-center">
         {developers.map((dev, idx) => (
           <motion.div
-            className="-mr-4  relative group"
+            className="-mr-4 relative group flex flex-col items-center"
             key={dev.name}
             onMouseEnter={() => setHoveredIndex(dev.id)}
             onMouseLeave={() => setHoveredIndex(null)}
@@ -104,11 +105,9 @@ export const AnimatedTooltip = (attr: any) => {
               duration: 0.1,
               type: "spring",
               stiffness: 160,
-              damping: 10
+              damping: 10,
             }}
-
           >
-
             {/* Desc popup box code - uncomment if needed */}
 
             {/* {hoveredIndex === dev.id && (
@@ -155,7 +154,6 @@ export const AnimatedTooltip = (attr: any) => {
             </div>
           </motion.div>
         ))}
-
       </div>
     </motion.div>
   );
